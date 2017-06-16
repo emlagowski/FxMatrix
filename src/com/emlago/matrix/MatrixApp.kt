@@ -1,4 +1,4 @@
-package sample
+package com.emlago.matrix
 
 import javafx.application.Application
 import javafx.application.Platform
@@ -11,7 +11,7 @@ import javafx.stage.WindowEvent
 
 import java.net.URL
 
-public class Main : Application() {
+public class MatrixApp : Application() {
     public val FXML_PATH: String = "matrix.fxml"
     public val TITLE: String = "Matrix generator"
 
@@ -29,11 +29,8 @@ public class Main : Application() {
     }
 
     companion object {
-
         public fun main(args: Array<String>) {
             Application.launch(*args)
         }
     }
 }
-
-fun main(args: Array<String>) = Main.main(args)
