@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <HBox>
+         <children>
+            <Pane prefWidth="200.0">
+               <children>
+                  <VBox spacing="10.0">
+                     <children>
+                        <ToggleButton fx:id="runButton" mnemonicParsing="false" prefHeight="100.0" prefWidth="180.0" text="RUN" />
+                        <Button fx:id="clearButton" mnemonicParsing="false" onAction="#clear" prefHeight="100.0" prefWidth="180.0" text="CLEAR" />
+                        <Label text="Threads count :" />
+                        <TextField fx:id="threadCounterField" prefWidth="180.0" />
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </Pane>
+            <GridPane fx:id="mainPane" alignment="center" hgap="10" style="-fx-background-color: black;" vgap="10"/>
+         </children>
+      </HBox>
+   </children>
+</Pane>
